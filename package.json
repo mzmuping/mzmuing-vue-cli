@@ -1,0 +1,8 @@
+{
+  "name": "mzmuing-vue-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mzmuping/mzmuing-vue-cli.git",
+  "author": "麦中麦 <824723712@qq.com>",
+  "license": "MIT"
+}
