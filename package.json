@@ -1,0 +1,13 @@
+{
+  "name": "generator-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "globby": "11.1.0",
+    "yeoman-generator": "^5.6.1"
+  }
+}
