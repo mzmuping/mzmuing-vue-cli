@@ -1,4 +1,5 @@
 const Generator = require('yeoman-generator');
+const globby = require('globby');
 module.exports = class extends Generator {
     prompting() {
         //Yeoman 在询问用户环节会自动调用此方法
@@ -29,7 +30,7 @@ module.exports = class extends Generator {
         // const context = this.answers;
         // //把模板写入到目标目录
         // this.fs.copyTpl(tmpl, output, context);
-
+        // await getTemplates();
         const templates = [
             '.browserslistrc',
             '.editorconfig',
@@ -66,4 +67,12 @@ module.exports = class extends Generator {
         })
     }
 
+}
+
+
+const getTemplates = async () => {
+    const path = __dirname + "/templates/**"
+    const paths = await globby(path)
+    console.log(paths, path)
+    return paths
 }
